@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>String Methods</title>
+    </head>
+    <body>
+
+        <h1>Create Dynamic Array (1 to 100)</h1>
+        <h2>Find the Even And Odd value</h2>
+
+        <script> 
+            // let myDynamicArray = new Array();
+
+            // for (let i=0; i<=100;i++){
+            //     let myData = myDynamicArray.push(i);
+            //     //  console.log(myData);
+            //     //console.log(typeof(myDynamicArray));
+                
+
+            //     if(myData%2 == 0){
+            //        //console.log(myData+"This Number is Even")
+            //        document.write("<br /> This is Even Number" + " " +myData+" "+"<br /> ")
+            //        document.write("<br />");
+            //     }else{
+            //         document.write("This is odd Number " + " " +myData+" "+" ")
+            //      }
+
+            //     //document.write("<br />");
+            // }
+
+            // //console.log(myDynamicArray);
+
+//-----------------------------------------------------------------------------------------------
+
+            //Seprated Even Number and Odd Number
+
+            let newArray = [];
+
+            for (let i=0; i<=100;i++){
+                newArray.push(i);
+
+                if(i%2 == 0){
+                   //console.log(i);
+                    document.body.insertAdjacentHTML("beforeEnd",i+" ");
+                }else{
+
+                    //console.log(i);
+                    document.body.insertAdjacentHTML("afterEnd",+i+" "); 
+                 }
+            }
+            //console.log(newArray);
+            //console.log(typeof(newArray));
+
+//------------------------------------------------------------------------------------------------
+
+            let even = [];
+            let odd = [];
+            
+
+            for (let i=0; i<=100;i++){
+                if(i%2 == 0){
+                   even.push(i) 
+                }else{
+                    odd.push(i)
+                }
+            }
+            console.log(even);
+            console.log(typeof(even));
+
+            console.log(odd);
+
+            // let newArray2 = [];
+
+            // for (let j=0; j<=100;j++){
+            //     if(j%2 !== 0){
+            //        console.log(j); 
+            //     }
+            // }
+            //console.log(newArray);
+            //console.log(typeof(newArray));
+
+
+
+        </script>
+    </body>
+</html>

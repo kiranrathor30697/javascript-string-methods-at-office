@@ -1,0 +1,46 @@
+<script>
+    let s = "Kamlesh";
+    let v = s.toString();
+    console.log(v);
+    console.log(typeof(v));
+
+    let c = ['Ramesh','Santosh'];
+    let d = c.toString();
+    console.log(d);
+    console.log(typeof(d));
+
+    let x = 254;
+
+    let obj = {
+        a:'a',
+        b:'b',
+        c:'c'
+    }
+    let myobj = obj.toString();
+    myobj = JSON.stringify(myobj);
+
+    console.log("my object:---",myobj);
+
+    // toString Method accept the 2 to 32 integer value 
+
+    //radix − An integer between 2 and 36 specifying the base to use for representing numeric values.
+
+
+
+    let z = x.toString();
+    let z1 = x.toString(2);// this parameter return the binary cade/number
+    let z2 = x.toString(4);
+    let z3 = x.toString(8);
+    let z4 = x.toString(10);
+    let z5 = x.toString(30);
+    let z6 = x.toString(16);// this parameter return the hexadecimal/number
+    let z7 = x.toString(32);
+    console.log('space',z);
+    console.log('2:-',z1);
+    console.log('4:-',z2);
+    console.log('8:-',z3);
+    console.log('10:-',z4);
+    console.log('30:-',z5);
+    console.log('16:-',z6);
+    console.log('32:-',z7); 
+</script>
